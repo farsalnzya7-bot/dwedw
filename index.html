@@ -1,0 +1,71 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discord.gg/EGAfH3vz</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://cdn.discordapp.com/attachments/1092217500562894868/1436302734767820851/E562FF80-46C9-4824-993A-C89993266226.png?ex=69b92e29&is=69b7dca9&hm=fffa216c7b9b9d38d0b31d0d28749bc5ced202c8b65628fb307b93ce0fe56c1f&') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Courier New', Courier, monospace;
+            color: #ff0000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        .image-container img {
+            width: 750px; 
+            height: auto;
+            border: 2px solid hwb(0 100% 0%); 
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(247, 241, 241, 0.7); 
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: rgb(255, 3, 108); 
+            text-shadow: 0px 0px 8px #063181, 0px 0px 15px #072c72, 0px 0px 25px #033b7a; 
+            letter-spacing: 4.5px; 
+            white-space: pre-wrap;
+        }
+        .text {
+            margin-top: 20px;
+            font-size: 3em; 
+            color: #ffffff; 
+            text-shadow: 0px 0px 8px #ffffff, 0px 0px 15px #ffffff, 0px 0px 25px #ffffff; 
+            letter-spacing: 4.5px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://gifdb.com/images/high/puppet-with-fire-exdjlk4bbjsk381m.gif" alt="Discord Image">
+    </div>
+    <audio autoplay loop>
+        <source src="aa.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+     <div class="text">  على زبي ي ابو ابراهيم ابو ديود انت والسوالب الي معك كس ام سيرفرك ع كس امكم كلكم واحد واحد اخيرا تعالو دسي discord.gg/EGAfH3vz </div></div>
+    <div class="info" id="ip-info">
+        <strong>IP: <span id="ip"></span></strong><br>
+
+    </div>
+    <div class="text">HACKED BY DESTROYER F7LK : Destroyer ALDAHMSi  : discord.gg/EGAfH3vz</div>
+
+    <script>
+         fetch('https://ipinfo.io/json')
+        .then(response => response.json())
+        .then(data => {
+            delete data.readme;
+            const infoDiv = document.getElementById('ip-info');
+            infoDiv.textContent = JSON.stringify(data, null, 2);
+        });
+    </script>
+</body>
+</html>
